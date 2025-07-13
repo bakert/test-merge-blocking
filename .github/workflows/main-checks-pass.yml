@@ -1,6 +1,6 @@
 name: Always runs always passes
 run-name: always runs always passes
-on: [push]
+on: [pull_request]
 jobs:
   always-pass-job:
     runs-on: ubuntu-latest

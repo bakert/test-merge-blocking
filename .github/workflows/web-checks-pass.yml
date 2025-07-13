@@ -1,9 +1,10 @@
 name: Runs on web always passes
 run-name: web passes
 on:
-  push:
+  pull_request:
     paths:
       - 'apps/web/**'
+
 jobs:
   web-pass-job:
     runs-on: ubuntu-latest

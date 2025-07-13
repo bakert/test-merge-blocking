@@ -3,7 +3,7 @@ run-name: ludwig fail
 on:
   pull_request:
     paths:
-      - apps/ludwig
+      - 'apps/ludwig/**'
 jobs:
   ludwig-fail-job:
     runs-on: ubuntu-latest

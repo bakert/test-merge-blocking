@@ -1,1 +1,7 @@
-Hello
+This is a test repo to demonstrate how you can set up checks that *must pass* if they run, but *do not have to run*.
+
+Basic GitHub workflows/actions/jobs do not support this in any configuration. But the merge-gatekeeper action plugs that gap. 
+
+You set merge-gatekeeper as the job that must pass in a branch ruleset and it monitors all other checks on the PR and reports success only if they all pass. If it fails merging will be blocked.
+
+There is no way to have a check that runs but does not need to pass under this system, but I see that as a feature.

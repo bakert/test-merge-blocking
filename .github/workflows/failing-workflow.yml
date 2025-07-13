@@ -1,8 +1,0 @@
-name: GitHub action that always runs and always fails
-run-name: always run always fail
-on: [push]
-jobs:
-  always-fail-job:
-    runs-on: ubuntu-latest
-    steps:
-      - run: exit 99

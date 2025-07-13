@@ -1,0 +1,9 @@
+name: Always runs always passes
+run-name: always runs always passes
+on: [push]
+jobs:
+  always-pass-job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: exit 0
+

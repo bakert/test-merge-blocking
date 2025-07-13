@@ -1,0 +1,11 @@
+name: Ludwig job that always fails
+run-name: ludwig fail
+on:
+   push:
+      paths: 
+        - apps/ludwig
+jobs:
+  ludwig-fail-job:
+   runs-on: ubuntu-latest
+   steps:
+     - run: exit 99

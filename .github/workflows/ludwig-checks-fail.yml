@@ -1,11 +1,11 @@
-name: Ludwig job that always fails
+name: "Ludwig job that always fails"
 run-name: ludwig fail
 on:
-   push:
-      paths: 
-        - apps/ludwig
+  pull_request:
+    paths:
+      - apps/ludwig
 jobs:
   ludwig-fail-job:
-   runs-on: ubuntu-latest
-   steps:
-     - run: exit 99
+    runs-on: ubuntu-latest
+    steps:
+      - run: exit 99

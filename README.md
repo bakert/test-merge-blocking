@@ -1,4 +1,4 @@
-= Conditional GitHub CI That Must Pass If Run
+# Conditional GitHub CI That Must Pass If Run
 
 This is a test repo to demonstrate how you can set up checks that *must pass* if they run, but *do not have to run*.
 
